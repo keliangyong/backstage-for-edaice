@@ -57,8 +57,7 @@
         data() {
             return {
                 baseurl: 'http://127.0.0.1:8001',
-                // session: Util.getcookie('sc_edaice_session'),
-                session: '000000261491561323.0',
+                session: Util.getcookie('sc_edaice_session'),
                 dialogSuc: false,
                 typeList: [],
                 levelList: [],
@@ -71,18 +70,18 @@
                 eduList: ['大专', '本科', '硕士', '博士'],
                 edu: '',
                 updTimeList: [
-                {label:'最近一周', value: '1'},
-                {label:'最近两周', value: '2'},
-                {label:'最近一个月', value: '3'},
-                {label:'最近两个月', value: '4'},
-                {label:'最近半年', value: '5'}
+                    {label:'最近一周', value: '1'},
+                    {label:'最近两周', value: '2'},
+                    {label:'最近一个月', value: '3'},
+                    {label:'最近两个月', value: '4'},
+                    {label:'最近半年', value: '5'}
                 ],
                 updTime: '',
                 yearList: [
-                {label:'一年以上', value: '1'},
-                {label:'两年以上', value: '2'},
-                {label:'三年以上', value: '3'},
-                {label:'五年以上', value: '5'}
+                    {label:'一年以上', value: '1'},
+                    {label:'两年以上', value: '2'},
+                    {label:'三年以上', value: '3'},
+                    {label:'五年以上', value: '5'}
                 ],
                 year: '',
                 job51: false,

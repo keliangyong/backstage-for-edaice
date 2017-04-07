@@ -112,8 +112,7 @@
     data() {
       return {
         baseurl: 'http://127.0.0.1:8001',
-        // session: Util.getcookie('sc_edaice_session'),
-        session: '000000261491561323.0',
+        session: Util.getcookie('sc_edaice_session'),
         filterData: [],
         tableData: [],
         pageSize: 15,

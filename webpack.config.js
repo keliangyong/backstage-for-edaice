@@ -68,6 +68,14 @@ module.exports = (options = {}) => ({
     }),
     new HtmlWebpackPlugin({
       template: 'src/index.html'
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      sourceMap: true,
+      beautify: false,
+      comments: false,
+      compress: {
+        warnings: false
+      }
     })
   ],
   resolve: {

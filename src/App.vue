@@ -27,8 +27,7 @@
     data() {
       return {
         baseurl: 'http://127.0.0.1:8001',
-        // session: Util.getcookie('sc_edaice_session'),
-        session: '000000261491561323.0',
+        session: Util.getcookie('sc_edaice_session'),
         activeIndex: '1',
         currentView: 'creat',
       }
@@ -37,32 +36,10 @@
       creat,
       tasklist
     },
-    created: function() {
-      this.init()
-    },
     methods: {
-      init(){
-
-      },
-      get(api, params){
-        return axios.get(this.baseurl + api, params)
-      },
       handelSelect(key, keyPath){
         this.activeIndex = key
         this.currentView = (key == '1') ? 'creat':'tasklist' 
-      },
-      getType(){
-        let _this = this
-        this.get('/getKeyMap', {
-          params: {
-            session: this.session
-          }
-        }).then(data => {
-          _this.typeList = data.data.data
-        })
-        .catch(error => {
-          console.log(error);
-        });
       }
     }
   }
