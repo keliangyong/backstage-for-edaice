@@ -1,6 +1,7 @@
 # backstage-for-edaice
 
-> A Backstage Manager System for Edaice-resume（edit from [ElementUI/element-starter]https://github.com/ElementUI/element-starter）
+> A Backstage Manager System for Edaice-resume
+> This Demo use [ElementUI/element-starter](https://github.com/ElementUI/element-starter)
 
 ## Environment
 
